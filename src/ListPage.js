@@ -17,7 +17,7 @@ export default function ListPage() {
   }
 
   useEffect(() => {
-      fetchVillagers();
+    fetchVillagers();
   });
 
     
