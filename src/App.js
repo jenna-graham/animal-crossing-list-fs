@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, } from 'react-router-dom';
 import './App.css';
 import ListPage from './ListPage';
 import DetailPage from './DetailPage';
@@ -7,17 +7,12 @@ import DetailPage from './DetailPage';
 function App() {
   return (
     <Router>
-      <div>
-        <ul>
-          <li>
-            <NavLink exact activeClassName="active-link" to="/">List Page</NavLink>
-          </li>
-        </ul>
+      <div className="App">
         <Switch>
           <Route exact path="/">
             <ListPage />
           </Route>
-          <Route exact path="/villagers/:id">
+          <Route exact path="/villager/:id">
             <DetailPage />
           </Route>
         </Switch>

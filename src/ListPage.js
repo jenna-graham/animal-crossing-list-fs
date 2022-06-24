@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { getVillagersData } from './services/fetch-utils';
 import VillagersList from './VillagersList';
+import Sound from './Sound';
 
 export default function ListPage() {
   const [villagers, setVillagers] = useState([]);
@@ -18,15 +19,17 @@ export default function ListPage() {
 
   useEffect(() => {
     fetchVillagers();
-  });
+  }, [page]);
 
     
   return (
     <div>
-      <h2>Current Page {page}</h2>
-      <div className="'buttons">
-        <button disabled={page <= 1} onClick={() => setPage(page - 1)}>Previous Page</button>
-        <button onClick={() => setPage(page + 1)}>Next Page</button>
+      <h1>Animal Crossing Villagers</h1>
+      <div><Sound /></div>
+      <h2> Page {page}</h2>
+      <div className="buttons">
+        <button className="page-button" disabled={page <= 1} onClick={() => setPage(page - 1)}>Previous Page</button>
+        <button className="page-button" onClick={() => setPage(page + 1)}>Next Page</button>
       </div>
       <VillagersList villagers={villagers} />
         
