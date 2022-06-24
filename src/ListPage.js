@@ -7,7 +7,7 @@ import Sound from './Sound';
 export default function ListPage() {
   const [villagers, setVillagers] = useState([]);
   const [page, setPage] = useState(1);
-  const perPage = 25;
+  const perPage = 24;
 
   async function fetchVillagers() {
     const from = page * perPage - perPage;
@@ -19,7 +19,6 @@ export default function ListPage() {
 
   useEffect(() => {
     fetchVillagers();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
 
     
@@ -27,7 +26,7 @@ export default function ListPage() {
     <div>
       <h1>Animal Crossing Villagers</h1>
       <div><Sound /></div>
-      <h2> Page {page}</h2>
+      <h2> 🌴 Page {page}</h2>
       <div className="buttons">
         <button className="page-button" disabled={page <= 1} onClick={() => setPage(page - 1)}>Previous Page</button>
         <button className="page-button" onClick={() => setPage(page + 1)}>Next Page</button>

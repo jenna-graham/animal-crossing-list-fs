@@ -34,6 +34,7 @@ export default function DetailPage() {
         
         <img src={imageURL}></img>
         <h3> the {villager.Species}</h3>
+        <p><b>Gender: </b>{villager.Gender}</p>
         <p> <b>Saying:</b> `{villager.saying}`</p>
         <p><b>Born on: </b> {villager.Birthday} </p>
         <p><b>Personality:</b> {villager.Personality}</p>

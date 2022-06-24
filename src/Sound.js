@@ -12,8 +12,8 @@ export default function ACMusic() {
   };
   return (
     <div>
-      <button onClick={start}>Island Vibes</button>
-      <button onClick={stop}>Pause</button>
+      <button className="music-button" onClick={start}>🎶 Island Vibes 🎶</button>
+      <button className="music-button" onClick={stop}>Pause</button>
     </div>
     
   );

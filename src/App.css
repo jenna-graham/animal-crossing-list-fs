@@ -43,7 +43,7 @@ img {
   background-image: url(./animal2.png);
   background-size: cover;
   border: 5px solid;
-  border-radius: 30%;
+  border-radius: 25%;
   margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -51,13 +51,13 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 30px;
 }
 h1 {
   font-size: 3rem;
 }
 p {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   background-color: antiquewhite;
   border: 1px solid;
   border-radius: 15px;
@@ -85,6 +85,15 @@ button.page-button {
   height: 40px;
   background-color: rgb(162, 207, 162);
   border-radius: 10px;
+  margin-right: 5px;
+}
+button.music-button {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  
+  
+  
 }
 a:link {
   text-decoration: none;
