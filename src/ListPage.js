@@ -19,6 +19,7 @@ export default function ListPage() {
 
   useEffect(() => {
     fetchVillagers();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page]);
 
     
