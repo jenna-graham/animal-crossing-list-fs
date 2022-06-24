@@ -85,7 +85,11 @@ button.page-button {
   background-color: rgb(162, 207, 162);
   border-radius: 10px;
 }
-
+a:link {
+  text-decoration: none;
+  color: black;
+  
+}
 
 
 
