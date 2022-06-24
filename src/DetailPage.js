@@ -31,8 +31,7 @@ export default function DetailPage() {
       <Link to='/'>Home</Link>
       <div className="villager-detail">
         <h5>{villager.Name}</h5>
-        
-        <img src={imageURL}></img>
+        <img className="detail-image" src={imageURL}></img>
         <h3> the {villager.Species}</h3>
         <p><b>Gender: </b>{villager.Gender}</p>
         <p> <b>Saying:</b> `{villager.saying}`</p>
