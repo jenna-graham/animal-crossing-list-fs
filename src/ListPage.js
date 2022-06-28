@@ -9,15 +9,16 @@ export default function ListPage() {
   const [page, setPage] = useState(1);
   const perPage = 24;
 
-  async function fetchVillagers() {
-    const from = page * perPage - perPage;
-    const to = page * perPage;
-    const villagers = await getVillagersData(from, to);
-
-    setVillagers(villagers);
-  }
+  
 
   useEffect(() => {
+    async function fetchVillagers() {
+      const from = page * perPage - perPage;
+      const to = page * perPage;
+      const villagers = await getVillagersData(from, to);
+  
+      setVillagers(villagers);
+    }
     fetchVillagers();
   }, [page]);
 
